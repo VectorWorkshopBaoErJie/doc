@@ -1,0 +1,181 @@
+#set page(numbering: ("— 1 —" ) ) // 使用阿拉伯数字 (例如: 1, 2, 3...)
+
+#set text(
+  font: "HarmonyOS Sans SC",
+  size: 12pt,
+  fill: rgb("#010920")
+)
+
+#set heading(numbering: "📖1-1")
+
+#set par(
+  //  first-line-indent: ( 1.5em),
+  spacing: 1.1em,
+  leading: 0.9em,
+  justify: true,
+)
+
+#set block(spacing: 1.2em)
+
+// 仅设置代码块样式
+#show raw.where(block: true): it => {
+  block(
+      fill: rgb("#d0d3da"),
+      inset: 8pt,
+      radius: 5pt,
+      text(fill: rgb("#0f1525"), it)
+  )
+}
+
+#show raw.where(block: false): it => box(
+  fill: rgb("#f9f2f4"),  // 浅粉色背景
+  inset: 1pt,  // 内边距
+  radius: 2pt,  // 圆角
+  text(
+    font: "Fira Code",
+    size: 1.2em,
+    fill: rgb("#d63384"),  // 深粉色文字
+    it
+  )
+)
+
+#include "introduction.typ"
+#include "install.typ"
+#include "glossary.typ"
+#include "flash.typ"
+#include "getting-help.typ"
+#include "project-setup.typ"
+#include "project-settings.typ"
+#include "libraries.typ"
+#include "editor.typ"
+#include "writing-code.typ"
+#include "editor-templates.typ"
+#include "editor-scripts.typ"
+#include "editor-scripts-ui.typ"
+#include "editor-preferences.typ"
+#include "refactoring.typ"
+#include "editor-styling.typ"
+#include "building-blocks.typ"
+#include "addressing.typ"
+#include "message-passing.typ"
+#include "application-lifecycle.typ"
+#include "importing-assets.typ"
+#include "caching-assets.typ"
+#include "importing-graphics.typ"
+#include "importing-models.typ"
+#include "adapting-graphics-to-screen-size.typ"
+#include "live-update.typ"
+#include "atlas.typ"
+#include "buffer.typ"
+#include "font.typ"
+#include "resource.typ"
+#include "tilesource.typ"
+#include "texture-filtering.typ"
+#include "texture-profiles.typ"
+#include "animation.typ"
+#include "flipbook-animation.typ"
+#include "model-animation.typ"
+#include "property-animation.typ"
+#include "components.typ"
+#include "collection-factory.typ"
+#include "collection-proxy.typ"
+#include "physics-objects.typ"
+#include "camera.typ"
+#include "factory.typ"
+#include "label.typ"
+#include "mesh.typ"
+#include "model.typ"
+#include "particlefx.typ"
+#include "sound.typ"
+#include "sprite.typ"
+#include "tilemap.typ"
+#include "gui.typ"
+#include "gui-box.typ"
+#include "gui-text.typ"
+#include "gui-pie.typ"
+#include "gui-particlefx.typ"
+#include "gui-template.typ"
+#include "gui-script.typ"
+#include "gui-clipping.typ"
+#include "gui-layouts.typ"
+#include "physics.typ"
+#include "physics-objects.typ"
+#include "physics-shapes.typ"
+#include "physics-groups.typ"
+#include "physics-messages.typ"
+#include "physics-events.typ"
+#include "physics-resolving-collisions.typ"
+#include "physics-ray-casts.typ"
+#include "physics-joints.typ"
+#include "sound.typ"
+#include "sound-streaming.typ"
+#include "input.typ"
+#include "input-key-and-text.typ"
+#include "input-mouse-and-touch.typ"
+#include "input-gamepads.typ"
+#include "script.typ"
+#include "properties.typ"
+#include "script-properties.typ"
+#include "lua.typ"
+#include "modules.typ"
+#include "debugging-game-logic.typ"
+#include "writing-code.typ"
+#include "file-access.typ"
+#include "networking.typ"
+#include "http-requests.typ"
+#include "socket-connections.typ"
+#include "online-services.typ"
+#include "render.typ"
+#include "material.typ"
+#include "compute.typ"
+#include "shader.typ"
+#include "texture-filtering.typ"
+#include "application-security.typ"
+#include "bundling.typ"
+#include "caching-assets.typ"
+#include "bob.typ"
+#include "hot-reload.typ"
+#include "porting-guidelines.typ"
+#include "refactoring.typ"
+#include "dev-app.typ"
+#include "version-control.typ"
+#include "writing-code.typ"
+#include "working-offline.typ"
+#include "debugging-game-logic.typ"
+#include "debugging-native-code.typ"
+#include "debugging-native-code-android.typ"
+#include "debugging-native-code-ios.typ"
+#include "debugging-game-and-system-logs.typ"
+#include "optimization.typ"
+#include "optimization-size.typ"
+#include "optimization-speed.typ"
+#include "optimization-battery.typ"
+#include "optimization-memory.typ"
+#include "profiling.typ"
+#include "ads.typ"
+#include "android.typ"
+#include "iac.typ"
+#include "dev-app.typ"
+#include "ios.typ"
+#include "iac.typ"
+#include "dev-app.typ"
+#include "nintendo-switch.typ"
+#include "sony-playstation.typ"
+#include "sony-playstation.typ"
+#include "microsoft-xbox.typ"
+#include "html5.typ"
+#include "linux.typ"
+#include "macos.typ"
+#include "windows.typ"
+#include "extensions.typ"
+#include "extensions-defold-sdk.typ"
+#include "extensions-gradle.typ"
+#include "extensions-cocoapods.typ"
+#include "extensions-script-api.typ"
+#include "extensions-best-practices.typ"
+#include "debugging-native-code.typ"
+#include "extensions-ext-manifests.typ"
+#include "app-manifest.typ"
+#include "extensions-manifest-merge-tool.typ"
+#include "extender-local-setup.typ"
+#include "extender-docker-images.typ"

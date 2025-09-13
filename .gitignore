@@ -6,3 +6,5 @@ deps/
 .idea/
 .vscode/
 .lite_project.lua
+/temp/__pycache__
+/scripts/modules/__pycache__
